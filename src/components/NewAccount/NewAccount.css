@@ -1,0 +1,77 @@
+/* NewAccount.css - Add your styles here */
+
+.new-account-layout {
+  display: flex;
+}
+
+.sidebar {
+  width: 10%;
+  background: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar .logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.new-account-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.tab-navigation {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab-navigation button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.tab-navigation button:hover {
+  background: #0056b3;
+}
+
+.account-card,
+deactivate-card {
+  display:inline-block;
+  width: 48%
+}
+
+.account-card h3,
+deactivate-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.input-field {
+  margin-bottom: 20px;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}

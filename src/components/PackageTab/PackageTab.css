@@ -1,0 +1,12 @@
+.package-tab {
+    display: flex;
+  }
+  
+  .frame {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+  }
+  
