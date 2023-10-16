@@ -1,0 +1,14 @@
+.preview-tab {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.detail {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.create-button {
+    width: fit-content;
+}

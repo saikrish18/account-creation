@@ -1,27 +1,8 @@
-/* NewAccount.css - Add your styles here */
 
 .new-account-layout {
   display: flex;
 }
 
-.sidebar {
-  width: 10%;
-  background: #333;
-  color: #fff;
-  padding: 20px;
-}
-
-.sidebar .logo {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.sidebar a {
-  text-decoration: none;
-  color: #fff;
-  display: block;
-  margin-bottom: 10px;
-}
 
 .new-account-content {
   flex: 1;
@@ -30,48 +11,85 @@
 
 .tab-navigation {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
 }
 
 .tab-navigation button {
-  background: #007bff;
-  color: #fff;
+  background: #ffffff;
+  color: #070707;
+  width: fit-content;
   border: none;
-  padding: 10px 20px;
+  padding: 10px;
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 10px
 }
+
 
 .tab-navigation button:hover {
-  background: #0056b3;
+  background: #0d0d0e;
+  color: #ffffff;
 }
 
-.account-card,
-deactivate-card {
-  display:inline-block;
-  width: 48%
+.account-card , .deactivate-card{
+  width:auto;
+  padding: 10px;
+  border-color: black;
+  border-radius: 2%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  padding: 20px;
 }
 
-.account-card h3,
-deactivate-card h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
+.deactivate-card{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
+
+
 
 .input-field {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .input-field input {
-  width: 100%;
+  width:100%;
   padding: 10px;
-  border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
+  margin-right: 20px;
 }
 
-.actions {
+.action {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  width: fit-content;
+}
+.btn1 {
+  background-color: #ffffff;
+  color: #080808;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.btn1:hover {
+  background-color: #080808;
+  color: #f3eded;
+}
+
+.deactivate-card button {
+  width: fit-content;
+  cursor: not-allowed;
+  background-color: #ccc; 
+  border: 1px solid #999;
+}
+.confirmation {
+  display: flex;
+  align-items: start;
+  margin-bottom: 10px;
+  white-space: nowrap ;
 }

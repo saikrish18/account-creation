@@ -14,13 +14,10 @@ function Dashboard() {
     <div className="dashboard">
       <Sidebar />
       <div className="content">
-        <div className="header">
-          <h2>Dashboard</h2>
-        </div>
         <div className="actions">
-          <button className="btn btn-primary">Export</button>
+          <button className="btn-primary1">Export</button>
           <input type="text" placeholder="Filter" />
-          <button className="btn btn-success" onClick={handleNewAgencyClick}>New Agency</button>
+          <button className="btn-success1" onClick={handleNewAgencyClick}>New Agency</button>
         </div>
         <table className="table">
           <thead>

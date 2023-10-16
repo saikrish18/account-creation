@@ -1,18 +1,45 @@
 import React from 'react';
+import './PreviewTab.css'
 
 function PreviewTab({ accountData, packageData, contractData }) {
-  return (
+ const agencyName= accountData?.agencyName || 'Default Value'
+ const userName = accountData ? accountData.userName : 'N/A';
+
+    return (
     <div className="preview-tab">
       <h3>About</h3>
       <div className="detail">
         <label>Agency Name:</label>
-        <span>{accountData.agencyName}</span>
+        <span>{agencyName}</span>
       </div>
       <div className="detail">
         <label>User Name:</label>
-        <span>John Doe</span>
+        <span>{userName}</span>
       </div>
-      {/* Add more details for Status, Role, Address, etc. */}
+      <div className="detail">
+        <label>User Name:</label>
+        <span>{userName}</span>
+      </div>
+      <div className="detail">
+        <label>User Name:</label>
+        <span>{userName}</span>
+      </div>
+      <div className="detail">
+        <label>User Name:</label>
+        <span>{userName}</span>
+      </div>
+      <div className="detail">
+        <label>User Name:</label>
+        <span>{userName}</span>
+      </div>
+      <div className="detail">
+        <label>User Name:</label>
+        <span>{userName}</span>
+      </div>
+      <div className="detail">
+        <label>User Name:</label>
+        <span>{userName}</span>
+      </div>
       
       <h3>Contacts</h3>
       <div className="detail">
@@ -23,29 +50,42 @@ function PreviewTab({ accountData, packageData, contractData }) {
         <label>Email:</label>
         <span>john@example.com</span>
       </div>
-      {/* Add more contact details as needed */}
       
-      <h3>Team</h3>
+      
       <div className="detail">
+      <h3>Team</h3>
         <label>Agency Manager:</label>
-        <span>Manager Name</span>
+        <label>Project Leader:</label>
+        <label>Sub Agency Admin:</label>
+        <label>Sales Partner:</label>
+        <label>Back Office:</label>
       </div>
-      {/* Add team member details for Project Leader, Subagency Admin, etc. */}
       
+      <div className="detail">
       <h3>Features</h3>
-      {/* Add details for Features section */}
+      <label>Address Management</label>
+      <label>Academy</label>
+   
       
       <h3>Subfeatures</h3>
-      {/* Add details for Subfeatures section */}
+      <label>Navigation</label>
+      <label>Maps</label>
+      </div>
       
+      <div className='detail'>
       <h3>Contract</h3>
-      {/* Add details for Contract section */}
-      
+      <label>Contract Duration</label>
+      <label>Number of workers</label>
+      </div>
+
+      <div className='detail'>
       <h3>Credentials</h3>
-      {/* Add details for Credentials section */}
+      <label>Email</label>
+      <label>Password</label>
+      </div>
       
       <div className="create-button">
-        <button className="btn btn-primary">Create</button>
+        <button >Create Account</button>
       </div>
     </div>
   );

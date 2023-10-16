@@ -47,13 +47,14 @@ function App() {
         />
         <Route
           path="/preview"
-          element={
+          render={(props) => (
             <PreviewTab
+              {...props}
               accountData={accountData}
               packageData={packageData}
               contractData={contractData}
             />
-          }
+          )}
         />
         </Routes>
       </div>
